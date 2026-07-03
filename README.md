@@ -124,10 +124,10 @@ eui_header = f"{base64(encrypted_aes_key)}.{base64(field_names)}"
 ┌────────────────────────────────────────────────────────────────────────┐
 │ Endpoint                                            │ Purpose          │
 ├────────────────────────────────────────────────────────────────────────┤
-│ global.account.xiaomi.com/pass/sendEmailRegTicket  │ Registration     │
-│ global.account.xiaomi.com/pass/verifyEmailRegTicket│ OTP Verification │
-│ account.xiaomi.com/pass/serviceLogin               │ Mi Store Sync    │
-│ go.buy.mi.co.id/id/app/userprofile                 │ Profile Check    │
+│ global.account.xiaomi.com/pass/sendEmailRegTicket  │ Registration      │
+│ global.account.xiaomi.com/pass/verifyEmailRegTicket│ OTP Verification  │
+│ account.xiaomi.com/pass/serviceLogin               │ Mi Store Sync     │
+│ go.buy.mi.co.id/id/app/userprofile                 │ Profile Check     │
 └────────────────────────────────────────────────────────────────────────┘
 ```
 
@@ -232,21 +232,21 @@ python Register/register.py
 ║                     REGISTRATION WORKFLOW                          ║
 ╠════════════════════════════════════════════════════════════════════╣
 ║                                                                    ║
-║  Step 1  →  Generate temporary email via RapidAPI                 ║
+║  Step 1  →  Generate temporary email via RapidAPI                  ║
 ║              ↓                                                     ║
-║  Step 2  →  Encrypt credentials using EUI protocol                ║
+║  Step 2  →  Encrypt credentials using EUI protocol                 ║
 ║              ↓                                                     ║
-║  Step 3  →  Send registration request to Xiaomi                   ║
+║  Step 3  →  Send registration request to Xiaomi                    ║
 ║              ↓                                                     ║
-║  Step 4  →  Solve captcha automatically (OCR/hCaptcha)            ║
+║  Step 4  →  Solve captcha automatically (OCR/hCaptcha)             ║
 ║              ↓                                                     ║
-║  Step 5  →  Extract OTP from temporary email                      ║
+║  Step 5  →  Extract OTP from temporary email                       ║
 ║              ↓                                                     ║
-║  Step 6  →  Verify OTP and finalize registration                  ║
+║  Step 6  →  Verify OTP and finalize registration                   ║
 ║              ↓                                                     ║
-║  Step 7  →  Initialize Mi Store session                           ║
+║  Step 7  →  Initialize Mi Store session                            ║
 ║              ↓                                                     ║
-║  Step 8  →  Save cookies to Cookies/cookies.json                  ║
+║  Step 8  →  Save cookies to Cookies/cookies.json                   ║
 ║                                                                    ║
 ╚════════════════════════════════════════════════════════════════════╝
 ```
