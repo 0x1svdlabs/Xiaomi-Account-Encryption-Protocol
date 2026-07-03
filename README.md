@@ -1,12 +1,19 @@
 <div align="center">
 
 ```
-██╗  ██╗██╗ █████╗  ██████╗ ███╗   ███╗██╗      █████╗  ██████╗ ██████╗ ██████╗ ██╗   ██╗███╗   ██╗████████╗
-╚██╗██╔╝██║██╔══██╗██╔═══██╗████╗ ████║██║     ██╔══██╗██╔════╝██╔════╝██╔═══██╗██║   ██║████╗  ██║╚══██╔══╝
- ╚███╔╝ ██║███████║██║   ██║██╔████╔██║██║     ███████║██║     ██║     ██║   ██║██║   ██║██╔██╗ ██║   ██║  
- ██╔██╗ ██║██╔══██║██║   ██║██║╚██╔╝██║██║     ██╔══██║██║     ██║     ██║   ██║██║   ██║██║╚██╗██║   ██║ 
-██╔╝ ██╗██║██║  ██║╚██████╔╝██║ ╚═╝ ██║██║     ██║  ██║╚██████╗╚██████╗╚██████╔╝╚██████╔╝██║ ╚████║   ██║  
-╚═╝  ╚═╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝     ╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝ 
+██╗  ██╗██╗ █████╗  ██████╗ ███╗   ███╗██╗
+╚██╗██╔╝██║██╔══██╗██╔═══██╗████╗ ████║██║
+ ╚███╔╝ ██║███████║██║   ██║██╔████╔██║██║
+ ██╔██╗ ██║██╔══██║██║   ██║██║╚██╔╝██║██║
+██╔╝ ██╗██║██║  ██║╚██████╔╝██║ ╚═╝ ██║██║
+╚═╝  ╚═╝╚═╝╚═╝  ╚═╝ ╚═════╝ ╚═╝     ╚═╝╚═╝
+
+ █████╗  ██████╗ ██████╗ ██████╗ ██╗   ██╗███╗   ██╗████████╗
+██╔══██╗██╔════╝██╔════╝██╔═══██╗██║   ██║████╗  ██║╚══██╔══╝
+███████║██║     ██║     ██║   ██║██║   ██║██╔██╗ ██║   ██║   
+██╔══██║██║     ██║     ██║   ██║██║   ██║██║╚██╗██║   ██║   
+██║  ██║╚██████╗╚██████╗╚██████╔╝╚██████╔╝██║ ╚████║   ██║   
+╚═╝  ╚═╝ ╚═════╝ ╚═════╝ ╚═════╝  ╚═════╝ ╚═╝  ╚═══╝   ╚═╝   
 
 ███████╗███╗   ██╗ ██████╗██████╗ ██╗   ██╗██████╗ ████████╗██╗ ██████╗ ███╗   ██╗
 ██╔════╝████╗  ██║██╔════╝██╔══██╗╚██╗ ██╔╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗  ██║
@@ -22,7 +29,7 @@
 ██║     ██║  ██║╚██████╔╝   ██║   ╚██████╔╝╚██████╗╚██████╔╝███████╗
 ╚═╝     ╚═╝  ╚═╝ ╚═════╝    ╚═╝    ╚═════╝  ╚═════╝ ╚═════╝ ╚══════╝
 
-by 0x1svd.labs
+                                                        by 0x1svd.labs
 ```
 
 [![Python Version](https://img.shields.io/badge/python-3.7+-blue.svg)](https://www.python.org/downloads/)
@@ -90,120 +97,387 @@ eui_header = f"{base64(encrypted_aes_key)}.{base64(field_names)}"
 
 ---
 
-## Features
+## ✨ Features
 
-**Encryption & Security:**
-- Full implementation of Xiaomi's EUI encryption protocol
-- RSA PKCS1_v1_5 padding implementation
-- AES-CBC mode with custom IV
-- Device fingerprinting generation
-- Browser fingerprint evasion using curl-cffi
+<table>
+<tr>
+<td width="50%">
 
-**Automation Capabilities:**
-- Automated captcha solving (Image OCR + hCaptcha)
-- Temporary email integration via RapidAPI
-- OTP extraction and verification
-- Multi-threaded account creation
-- Automatic proxy rotation on IP blocks
-- Cookie session management
+### 🔐 Encryption & Security
+- ✅ Full implementation of Xiaomi's EUI encryption protocol
+- ✅ RSA PKCS1_v1_5 padding implementation
+- ✅ AES-CBC mode with custom IV
+- ✅ Device fingerprinting generation
+- ✅ Browser fingerprint evasion using curl-cffi
 
-**API Endpoints Used:**
-- `global.account.xiaomi.com/pass/sendEmailRegTicket` - Registration
-- `global.account.xiaomi.com/pass/verifyEmailRegTicket` - OTP Verification
-- `account.xiaomi.com/pass/serviceLogin` - Mi Store Sync
-- `go.buy.mi.co.id/id/app/userprofile` - Profile Verification
+</td>
+<td width="50%">
 
-## Technical Stack
+### 🤖 Automation Capabilities
+- 🧩 Automated captcha solving (Image OCR + hCaptcha)
+- 📧 Temporary email integration via RapidAPI
+- 🔢 OTP extraction and verification
+- ⚡ Multi-threaded account creation (3 threads)
+- 🔄 Automatic proxy rotation on IP blocks
+- 🍪 Cookie session management
+
+</td>
+</tr>
+</table>
+
+### 🌐 API Endpoints Used
+
+```
+┌────────────────────────────────────────────────────────────────────────┐
+│ Endpoint                                            │ Purpose          │
+├────────────────────────────────────────────────────────────────────────┤
+│ global.account.xiaomi.com/pass/sendEmailRegTicket  │ Registration     │
+│ global.account.xiaomi.com/pass/verifyEmailRegTicket│ OTP Verification │
+│ account.xiaomi.com/pass/serviceLogin               │ Mi Store Sync    │
+│ go.buy.mi.co.id/id/app/userprofile                 │ Profile Check    │
+└────────────────────────────────────────────────────────────────────────┘
+```
+
+---
+
+## 🛠️ Technical Stack
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/yourusername/xiaomi-account-encryption-protocol.git
+cd xiaomi-account-encryption-protocol
+
+# Install dependencies
 pip install -r requirements.txt
 ```
 
-**Dependencies:**
-- `requests` - HTTP client
-- `curl_cffi` - Browser impersonation
-- `pycryptodome` - RSA/AES cryptographic operations
-- `pyTelegramBotAPI` - Telegram notifications (optional)
+### Dependencies
 
-## Configuration
+<table>
+<tr>
+<td align="center" width="25%">
+<img src="https://raw.githubusercontent.com/psf/requests/main/ext/requests-logo.png" width="60"><br>
+<b>requests</b><br>
+<sub>HTTP client</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://avatars.githubusercontent.com/u/110098278" width="60"><br>
+<b>curl-cffi</b><br>
+<sub>Browser impersonation</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://www.pycryptodome.org/en/latest/_static/pycryptodome_logo.png" width="60"><br>
+<b>pycryptodome</b><br>
+<sub>RSA/AES operations</sub>
+</td>
+<td align="center" width="25%">
+<img src="https://core.telegram.org/file/464001863/110f3/I47qTXAD9Z4.120010/e0ea04f66357b640ec" width="60"><br>
+<b>pyTelegramBotAPI</b><br>
+<sub>Notifications (optional)</sub>
+</td>
+</tr>
+</table>
+
+---
+
+## ⚙️ Configuration
 
 Before running, configure your API credentials:
 
-### 1. Temp Mail API (RapidAPI)
+<details open>
+<summary><b>1️⃣ Temp Mail API (RapidAPI)</b></summary>
+
 Edit `Email/buatakun.py`:
 ```python
 API_KEY = "YOUR_RAPIDAPI_KEY"  # Line 8
 ```
-Get your key from: https://rapidapi.com/Privatix/api/temp-mail
 
-### 2. CapSolver API
+**Get your key:** [RapidAPI - Privatix Temp Mail](https://rapidapi.com/Privatix/api/temp-mail)
+
+</details>
+
+<details open>
+<summary><b>2️⃣ CapSolver API</b></summary>
+
 Edit `Register/register.py`:
 ```python
 api_key = "YOUR_CAPSOLVER_API_KEY"  # Line 29
 ```
-Get your key from: https://capsolver.com
 
-### 3. Proxy Configuration (Optional)
+**Get your key:** [CapSolver Official](https://capsolver.com)
+
+</details>
+
+<details>
+<summary><b>3️⃣ Proxy Configuration (Optional)</b></summary>
+
 Edit `Register/register.py`:
 ```python
 proxy_url = "http://USER:PASS@IP:PORT"  # Line 269
 ```
-Residential proxies recommended for avoiding IP blocks.
 
-## Usage
+**Recommended:** Residential proxies for avoiding IP blocks
 
-Run the main registration script:
+</details>
+
+---
+
+## 🚀 Usage
+
+### Quick Start
 
 ```bash
 python Register/register.py
 ```
 
-The script will:
-1. Prompt for the number of accounts to create
-2. Generate temporary emails automatically
-3. Encrypt credentials using the EUI protocol
-4. Solve captchas automatically
-5. Verify OTP from email
-6. Save successful cookies to `Cookies/cookies.json`
-
-**Multi-threading:** Uses 3 concurrent threads by default for optimal performance.
-
-## Project Structure
+### Workflow Process
 
 ```
-.
-├── Email/
-│   └── buatakun.py          # Temp email generation & OTP extraction
-├── Register/
-│   └── register.py          # Main registration & encryption logic
-├── Cookies/
-│   └── cookies.json         # Saved account cookies
-├── requirements.txt
-└── README.md
+╔════════════════════════════════════════════════════════════════════╗
+║                     REGISTRATION WORKFLOW                          ║
+╠════════════════════════════════════════════════════════════════════╣
+║                                                                    ║
+║  Step 1  →  Generate temporary email via RapidAPI                 ║
+║              ↓                                                     ║
+║  Step 2  →  Encrypt credentials using EUI protocol                ║
+║              ↓                                                     ║
+║  Step 3  →  Send registration request to Xiaomi                   ║
+║              ↓                                                     ║
+║  Step 4  →  Solve captcha automatically (OCR/hCaptcha)            ║
+║              ↓                                                     ║
+║  Step 5  →  Extract OTP from temporary email                      ║
+║              ↓                                                     ║
+║  Step 6  →  Verify OTP and finalize registration                  ║
+║              ↓                                                     ║
+║  Step 7  →  Initialize Mi Store session                           ║
+║              ↓                                                     ║
+║  Step 8  →  Save cookies to Cookies/cookies.json                  ║
+║                                                                    ║
+╚════════════════════════════════════════════════════════════════════╝
 ```
 
-## Security Mechanisms Bypassed
+### Performance Features
 
-- ✅ Device fingerprinting
-- ✅ Image CAPTCHA (via CapSolver OCR)
-- ✅ hCaptcha (site key: `6LeBM0ocAAAAAEwYcFUjtxpVbs-0rnbSVXBBXmh4`)
-- ✅ Rate limiting (via proxy rotation)
-- ✅ IP blocking detection
+| Feature | Description |
+|---------|-------------|
+| ⚡ **Multi-threading** | 3 concurrent threads for optimal performance |
+| 🔄 **Auto-retry** | Automatic proxy rotation on IP blocks |
+| 💾 **Session storage** | Successful accounts saved to JSON |
+| 📊 **Progress tracking** | Real-time success/failure counter |
 
-## Educational Purpose
+---
 
-This project is for **educational and research purposes** to understand:
-- Client-side encryption implementation
-- Hybrid cryptographic systems (RSA + AES)
-- API reverse engineering methodologies
-- Browser automation and fingerprint evasion
+## 📁 Project Structure
 
-The extracted `PUBLIC_KEY_EUI` and encryption protocol can be used for legitimate integrations with Xiaomi's account system.
+```
+xiaomi-account-encryption-protocol/
+│
+├── 📧 Email/
+│   └── buatakun.py                  # Temp email generation & OTP extraction
+│                                    # Functions: generate_email(), check_inbox(), extract_otp()
+│
+├── 🔐 Register/
+│   └── register.py                  # Main registration & EUI encryption logic
+│                                    # Functions: encrypt_eui(), register_account(), verify_otp()
+│                                    # Lines: 484 | Core: RSA-AES implementation
+│
+├── 🍪 Cookies/
+│   └── cookies.json                 # Saved account session cookies
+│                                    # Format: [{"cookie": {...}}, ...]
+│
+├── 📋 requirements.txt              # Python dependencies
+└── 📖 README.md                     # This file
+```
 
-## Disclaimer
+<details>
+<summary>📊 <b>Code Statistics</b></summary>
 
-This tool is intended for educational purposes and authorized security research only. Users are responsible for compliance with Xiaomi's Terms of Service and applicable laws. The authors assume no liability for misuse.
+| File | Lines | Functions | Purpose |
+|------|-------|-----------|---------|
+| `Email/buatakun.py` | 136 | 6 | Email & OTP handling |
+| `Register/register.py` | 484 | 12 | Encryption & Registration |
+| **Total** | **620** | **18** | **Full automation** |
 
-## License
+</details>
 
-MIT License - Use at your own risk.
+---
+
+## 🛡️ Security Mechanisms Bypassed
+
+<table>
+<tr>
+<td align="center" width="20%">
+<img src="https://img.icons8.com/fluency/96/fingerprint.png" width="50"><br>
+<b>Device Fingerprinting</b><br>
+<sub>✅ MD5 hash generation</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://img.icons8.com/fluency/96/captcha.png" width="50"><br>
+<b>Image CAPTCHA</b><br>
+<sub>✅ CapSolver OCR</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://img.icons8.com/fluency/96/bot.png" width="50"><br>
+<b>hCaptcha</b><br>
+<sub>✅ Automated solving</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://img.icons8.com/fluency/96/clock.png" width="50"><br>
+<b>Rate Limiting</b><br>
+<sub>✅ Proxy rotation</sub>
+</td>
+<td align="center" width="20%">
+<img src="https://img.icons8.com/fluency/96/block.png" width="50"><br>
+<b>IP Blocking</b><br>
+<sub>✅ Auto-switch proxy</sub>
+</td>
+</tr>
+</table>
+
+**hCaptcha Site Key:** `6LeBM0ocAAAAAEwYcFUjtxpVbs-0rnbSVXBBXmh4`
+
+---
+
+## 🎓 Educational Purpose
+
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════════════╗
+║                    LEARNING OBJECTIVES                            ║
+╠═══════════════════════════════════════════════════════════════════╣
+║                                                                   ║
+║  🔐  Client-side encryption implementation                        ║
+║      → Understanding how web services protect user data           ║
+║                                                                   ║
+║  🔑  Hybrid cryptographic systems (RSA + AES)                     ║
+║      → Real-world encryption pattern analysis                     ║
+║                                                                   ║
+║  🔍  API reverse engineering methodologies                        ║
+║      → Understanding proprietary protocols                        ║
+║                                                                   ║
+║  🌐  Browser automation & fingerprint evasion                     ║
+║      → Anti-bot bypass techniques                                 ║
+║                                                                   ║
+╚═══════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+**Note:** The extracted `PUBLIC_KEY_EUI` and encryption protocol can be used for legitimate integrations with Xiaomi's account system.
+
+---
+
+## ⚠️ Disclaimer
+
+<div align="center">
+
+```
+╔═══════════════════════════════════════════════════════════════════════╗
+║                                                                       ║
+║                      ⚠️  IMPORTANT NOTICE  ⚠️                         ║
+║                                                                       ║
+║  ┌─────────────────────────────────────────────────────────────────┐ ║
+║  │                                                                 │ ║
+║  │  This tool is intended for EDUCATIONAL PURPOSES and            │ ║
+║  │  AUTHORIZED SECURITY RESEARCH only.                            │ ║
+║  │                                                                 │ ║
+║  │  Users are responsible for compliance with:                    │ ║
+║  │  • Xiaomi's Terms of Service                                   │ ║
+║  │  • Applicable local and international laws                     │ ║
+║  │  • Ethical security research guidelines                        │ ║
+║  │                                                                 │ ║
+║  │  The authors assume NO LIABILITY for:                          │ ║
+║  │  • Misuse of this software                                     │ ║
+║  │  • Any damages resulting from its use                          │ ║
+║  │  • Violation of third-party terms of service                   │ ║
+║  │                                                                 │ ║
+║  │  By using this software, you agree to use it RESPONSIBLY       │ ║
+║  │  and in accordance with all applicable laws and regulations.   │ ║
+║  │                                                                 │ ║
+║  └─────────────────────────────────────────────────────────────────┘ ║
+║                                                                       ║
+╚═══════════════════════════════════════════════════════════════════════╝
+```
+
+</div>
+
+---
+
+## 📄 License
+
+<div align="center">
+
+### MIT License
+
+```
+┌─────────────────────────────────────────────────────────────────────┐
+│                                                                     │
+│  Copyright (c) 2026 0x1svd.labs                                     │
+│                                                                     │
+│  Permission is hereby granted, free of charge, to any person        │
+│  obtaining a copy of this software and associated documentation     │
+│  files (the "Software"), to deal in the Software without            │
+│  restriction, including without limitation the rights to use,       │
+│  copy, modify, merge, publish, distribute, sublicense, and/or       │
+│  sell copies of the Software, and to permit persons to whom the     │
+│  Software is furnished to do so, subject to the following           │
+│  conditions:                                                        │
+│                                                                     │
+│  The above copyright notice and this permission notice shall be     │
+│  included in all copies or substantial portions of the Software.    │
+│                                                                     │
+│  THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND,    │
+│  EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES    │
+│  OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND           │
+│  NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT        │
+│  HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,       │
+│  WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING       │
+│  FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR      │
+│  OTHER DEALINGS IN THE SOFTWARE.                                    │
+│                                                                     │
+└─────────────────────────────────────────────────────────────────────┘
+```
+
+**Use at your own risk**
+
+</div>
+
+---
+
+<div align="center">
+
+## 🔗 Connect & Support
+
+[![GitHub](https://img.shields.io/badge/GitHub-0x1svd.labs-181717?style=for-the-badge&logo=github)](https://github.com/0x1svd)
+[![Email](https://img.shields.io/badge/Email-Contact-EA4335?style=for-the-badge&logo=gmail&logoColor=white)](mailto:contact@0x1svd.labs)
+[![Website](https://img.shields.io/badge/Website-0x1svd.labs-4285F4?style=for-the-badge&logo=google-chrome&logoColor=white)](https://0x1svd.labs)
+
+---
+
+### 💡 Found this useful?
+
+⭐ **Star this repository** if you found it helpful!
+
+🔀 **Fork it** to create your own version
+
+🐛 **Report issues** to help improve the project
+
+---
+
+```
+███████╗███╗   ██╗     ██╗ ██████╗ ██╗   ██╗    ██╗  ██╗ █████╗  ██████╗██╗  ██╗██╗███╗   ██╗ ██████╗ 
+██╔════╝████╗  ██║     ██║██╔═══██╗╚██╗ ██╔╝    ██║  ██║██╔══██╗██╔════╝██║ ██╔╝██║████╗  ██║██╔════╝ 
+█████╗  ██╔██╗ ██║     ██║██║   ██║ ╚████╔╝     ███████║███████║██║     █████╔╝ ██║██╔██╗ ██║██║  ███╗
+██╔══╝  ██║╚██╗██║██   ██║██║   ██║  ╚██╔╝      ██╔══██║██╔══██║██║     ██╔═██╗ ██║██║╚██╗██║██║   ██║
+███████╗██║ ╚████║╚█████╔╝╚██████╔╝   ██║       ██║  ██║██║  ██║╚██████╗██║  ██╗██║██║ ╚████║╚██████╔╝
+╚══════╝╚═╝  ╚═══╝ ╚════╝  ╚═════╝    ╚═╝       ╚═╝  ╚═╝╚═╝  ╚═╝ ╚═════╝╚═╝  ╚═╝╚═╝╚═╝  ╚═══╝ ╚═════╝ 
+```
+
+**Made with ❤️ for the Security Research Community**
+
+*Last Updated: July 2026*
+
+</div>
