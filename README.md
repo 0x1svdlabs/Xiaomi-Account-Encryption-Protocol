@@ -139,7 +139,7 @@ eui_header = f"{base64(encrypted_aes_key)}.{base64(field_names)}"
 
 ```bash
 # Clone the repository
-git clone https://github.com/yourusername/xiaomi-account-encryption-protocol.git
+git clone https://github.com/0x1svdlabs/xiaomi-account-encryption-protocol.git
 cd xiaomi-account-encryption-protocol
 
 # Install dependencies
